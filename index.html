@@ -29,6 +29,118 @@
   </div>
   <main><h2>Welcome to Digital Rojgar</h2><p>Latest job info, admit cards, and results.</p></main>
   </section>
+ 
+  <title>सरकारी नौकरी पोर्टल</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+    }
+
+    .tab-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .tab {
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px;
+      font-weight: bold;
+      color: #000;
+      animation: colorChange 5s infinite linear;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+
+    .tab:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes colorChange {
+      0%   { background: linear-gradient(45deg, #ff9a9e, #fad0c4); }
+      25%  { background: linear-gradient(45deg, #a18cd1, #fbc2eb); }
+      50%  { background: linear-gradient(45deg, #fbc2eb, #a6c1ee); }
+      75%  { background: linear-gradient(45deg, #84fab0, #8fd3f4); }
+      100% { background: linear-gradient(45deg, #ff9a9e, #fad0c4); }
+    }
+
+    .search-bar {
+      margin: 30px auto;
+      display: flex;
+      justify-content: center;
+    }
+
+    .search-bar input {
+      width: 300px;
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid #ff6600;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+    }
+
+    .search-bar button {
+      padding: 10px 15px;
+      background: #ff6600;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+    }
+
+    .tab.hide {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="सर्च करें...">
+    <button onclick="searchTabs()">🔍</button>
+  </div>
+
+  <div class="tab-container" id="tabContainer">
+    <div class="tab">BHEL Artisan Vacancy 2025</div>
+    <div class="tab">HPSC Assistant Professor Result 2025</div>
+    <div class="tab">MP Guest Teacher 2025 - Online Apply</div>
+    <div class="tab">MPESB Primary School Teacher Selection Test 2025</div>
+    <div class="tab">Jharkhand SSC ANM Vacancy 2025</div>
+    <div class="tab">MPESB Candidate Profiling / OTR Form</div>
+    <div class="tab">RBI Officers Grade A and B Vacancy 2025</div>
+    <div class="tab">RRB ALP CBAT Exam AdmitCard 2025</div>
+    <div class="tab">NHPC Apprentice Vacancy 2025</div>
+    <div class="tab">Indian Airforce Agniveervayu 2025 Online Form</div>
+    <div class="tab">MPPSC Food Safety Officer Vacancy 2025</div>
+    <div class="tab">Railway BLW Apprentices Vacancy 2025</div>
+  </div>
+
+  <script>
+    function searchTabs() {
+      let input = document.getElementById('searchInput').value.toLowerCase();
+      let tabs = document.querySelectorAll('.tab');
+
+      tabs.forEach(tab => {
+        const text = tab.textContent.toLowerCase();
+        if (text.includes(input)) {
+          tab.classList.remove('hide');
+        } else {
+          tab.classList.add('hide');
+        }
+      });
+    }
+
+    // Enable real-time search on typing
+    document.getElementById('searchInput').addEventListener('input', searchTabs);
+  </script>
+
 <section id="featured">
 <div class="column">
 <h3>LATEST JOBS</h3>
