@@ -1,7 +1,5 @@
-body {
-  margin-top: 0;
-  padding-top: 0;
- margin: 0; font-family: Arial, sans-serif; background: #f9f9f9; }
+
+ body {margin: 0; font-family: Arial, sans-serif; background: #f9f9f9; }
 .top-bar { background: yellow; padding: 10px; display: flex; align-items: center; }
 .logo { height: 100px; margin-right: 10px; }
 .site-title { font-size: 35px; font-blue: bold; color: red; }
