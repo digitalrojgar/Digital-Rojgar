@@ -2,7 +2,7 @@
  body {margin: 0; font-family: Arial, sans-serif; background: #f9f9f9; }
 .top-bar { background: yellow; padding: 10px; display: flex; align-items: center; }
 .logo { height: 100px; margin-right: 10px; }
-.site-title { font-size: 35px; font-blue: bold; color: red; }
+.site-title {text-align: center; font-size: 35px; font-blue: bold; color: red; }
 
 .popup { background: #ccf; padding: 15px; position: fixed; top: 20px; right: 20px; border: 1px solid #999; border-radius: 10px; display: block; z-index: 1000; }
 @media (max-width: 768px) {
