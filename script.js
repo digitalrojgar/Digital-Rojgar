@@ -51,7 +51,7 @@
     const urlQ = new URLSearchParams(location.search).get('q');
     if(urlQ){ openModal(); input.value=urlQ; doSearch(urlQ); }
   }
-})();
+// Menu Toggle Script
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
