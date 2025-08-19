@@ -52,3 +52,8 @@
     if(urlQ){ openModal(); input.value=urlQ; doSearch(urlQ); }
   }
 })();
+<script>
+function toggleMenu() {
+  document.getElementById("nav-links").classList.toggle("active");
+}
+</script>
